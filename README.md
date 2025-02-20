@@ -1,22 +1,16 @@
-# My React + Vite Project
+# 🌟 Somniacs Mint  
+Empowering everyone to effortlessly **create, mint, and own NFTs** using fiat currency, bridging the gap between **traditional money** and **Web 3.0**! 🚀  
 
-### Installation
-1. Clone the repository :
+## 🔥 Why Somniacs Mint?  
+✅ **Easy NFT Minting** – No crypto? No problem! Mint NFTs with fiat payments.  
+✅ **Seamless Web3 Experience** – Bringing blockchain technology closer to everyone.  
+✅ **Fast & Secure** – Powered by **Somnia Network** for an optimized minting process.  
 
-```bash
-git clone https://github.com/rheinatamara/relationship_website_mobile.git
-cd  relationship_website_mobile
-```
+## 🚀 Features  
+- 💎 **Mint NFTs easily** with fiat or crypto.  
+- 🎨 **User-friendly interface** for creators and collectors.  
+- 🔗 **Fully decentralized** & built on **Somnia Network**.  
+- ⚡ **Low transaction fees** and **fast minting process**.  
 
-
-2. Install dependencies:
-```bash
-npm install
-```
-3. Start the development server:
-```bash
-npm run dev
-```
-4. Open your browser and navigate to http://localhost:5173/ (default Vite dev server URL).
-
-
+## ⚠️ Disclaimer  
+**This project is for educational and testing purposes only.** It is not intended for commercial use or financial transactions. The developers are not responsible for any misuse of this software. Use at your own risk.  

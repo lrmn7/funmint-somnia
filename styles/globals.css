@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --yellow: #feb60a;
+  --red: #ff0062;
+  --blue: #00dbf9;
+  --violet: #da00f7;
+}
+
+.lod-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lod-container div {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+  margin: 2vw;
+  background-image: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  animation: bounce 1.5s 0.5s linear infinite;
+}
+.yellow {
+  background-color: var(--yellow);
+}
+
+.red {
+  background-color: var(--red);
+  animation-delay: 0.1s;
+}
+
+.blue {
+  background-color: var(--blue);
+  animation-delay: 0.2s;
+}
+
+.violet {
+  background-color: var(--violet);
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%,
+  50%,
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  25% {
+    transform: scale(0.6);
+    filter: blur(3px);
+  }
+  75% {
+    filter: blur(3px);
+    transform: scale(1.4);
+  }
+}
+
+/* Scrollbar untuk browser berbasis WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Ukuran scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Warna latar belakang track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--black), var(--violet), var(--pink));
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, var(--red), var(--violet), var(--pink));
+}
+
+/* Untuk Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--violet) var(--gray);
+}
