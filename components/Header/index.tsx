@@ -19,21 +19,29 @@ const Header: NextPage = () => {
   const walletAddress = useAppSelector((state) => state.wallet.walletAddress);
 
   const connectWallet = async () => {
-    const { solana } = window;
+    if (typeof window.ethereum !== "undefined") {
+      try {
+        // Request wallet connection
+        const accounts = await window.ethereum.request({
+          method: "eth_requestAccounts",
+        });
 
-    if (solana) {
-      const response = await solana.connect();
-      console.log("Connected with Public Key:", response.publicKey.toString());
-      onSetWalletAddress(response.publicKey.toString());
+        if (accounts.length > 0) {
+          console.log("Connected with Address:", accounts[0]);
+          onSetWalletAddress(accounts[0]); // Simpan alamat wallet ke Redux
+        }
+      } catch (error) {
+        console.error("Error connecting to MetaMask:", error);
+      }
     } else {
-      alert("Please Install Phantom!!");
+      alert("Please install MetaMask!");
     }
   };
 
   return (
     <HeaderContainer>
       <HeaderText>
-      Somniacs<span>Mint</span>
+        Somniacs<span>Mint</span>
       </HeaderText>
       <HeaderNav>
         <HeaderUL>
