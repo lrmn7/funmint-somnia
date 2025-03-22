@@ -45,6 +45,6 @@ export async function getNFTOwner(tokenId: number) {
   return await readContract({
     contract,
     method: 'function ownerOf(uint256 tokenId) returns (address)',
-    params: [BigInt(tokenId)], // Passing tokenId sebagai argumen
+    params: [BigInt(tokenId)],
   });
 }

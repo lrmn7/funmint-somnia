@@ -2,7 +2,7 @@
  * Fetch the NFT metadata by tokenId.
  */
 
-import { getTokenURI } from '@/actions/gallery-actions';
+import { getTokenURI } from '@/actions/collections-actions';
 import { unstable_noStore as noStore } from 'next/cache';
 import { ipfsToHttp } from '@/lib/utils';
 import NFTCard from './nft-card';

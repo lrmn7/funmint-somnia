@@ -6,7 +6,7 @@
  * Otherwise, it renders a search box and a list of NFTs.
  */
 
-import { getTokenIdCounter } from '@/actions/gallery-actions';
+import { getTokenIdCounter } from '@/actions/collections-actions';
 import { Suspense } from 'react';
 import FetchNFT from './fetch-nft';
 import { NFTCardSkeleton } from './nft-card';

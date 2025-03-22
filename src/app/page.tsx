@@ -20,7 +20,7 @@ import { Typewriter } from 'react-simple-typewriter';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-full">
-      <div className="min-h-[50vh] max-lg:min-h-[47vh] w-full flex flex-col justify-center items-center gap-4 text-center max-sm:px-2">
+      <div className="min-h-[45vh] max-lg:min-h-[40vh] w-full flex flex-col justify-center items-center gap-4 text-center max-sm:px-2">
         <h1 className="uppercase text-sm font-bold text-zinc-400">
           Explore, Create, and Collect Exclusive Digital Art NFTs.
         </h1>

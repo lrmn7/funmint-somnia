@@ -5,7 +5,7 @@
  * It renders the NFT image, name, description, and external URL if exists.
  * It also renders the owner address of the NFT.
  */
-import { getNFTOwner, getTokenURI } from '@/actions/gallery-actions';
+import { getNFTOwner, getTokenURI } from '@/actions/collections-actions';
 import { ipfsToHttp, isValidUrl, parseToNumber } from '@/lib/utils';
 import { Metadata } from 'next';
 import Image from 'next/image';

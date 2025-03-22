@@ -6,7 +6,6 @@ import { ThirdwebProvider } from 'thirdweb/react';
 import './globals.css';
 import rootMetadata from './metadata';
 import { Toaster } from '@/components/ui/sonner';
-
 /**
  * Load Manrope font from local file
  */
