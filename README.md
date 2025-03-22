@@ -43,10 +43,6 @@ THIRDWEB_SECRET_KEY=your_secret_key
 
 Live at: [funmint.vercel.app](https://funmint.vercel.app)
 
-## 🎭 OpenSea Profile
-
-[View NFTs on OpenSea](https://testnets.opensea.io/0x90A69de07ADEEDBA5d2f2D0afdc0f4D9aFFcbA4F)
-
 ## 🖼️ App Preview
 
 <p align="center">
