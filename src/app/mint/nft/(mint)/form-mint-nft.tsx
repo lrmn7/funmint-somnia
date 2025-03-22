@@ -171,7 +171,7 @@ export default function FormMintNFT({ form }: Props) {
         >
           <Info size={15} />
           <span className="text-xs font-bold text-wrap">
-          Tip: Hover over the image and click it to go back to the Upload step.
+            Tip: Hover over the image and click it to go back to the Upload step.
           </span>
         </div>
         <Button

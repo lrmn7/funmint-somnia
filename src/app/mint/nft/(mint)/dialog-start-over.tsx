@@ -48,7 +48,7 @@ export default function DialogStartOver({ isFormSubmitting }: { isFormSubmitting
         <AlertDialogHeader>
           <AlertDialogTitle>Are you sure you want to restart?</AlertDialogTitle>
           <AlertDialogDescription>
-          Your current progress will be lost, and you will begin again from the upload step.
+            Your current progress will be lost, and you will begin again from the upload step.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
