@@ -6,7 +6,7 @@ Welcome to **FunMint**, a Web3 app for creating and minting unique NFTs on the *
 
 - 🌐 **Decentralized** – Secure and transparent NFT minting on the blockchain.
 - 🎨 **Create & Mint** – Easily generate your own unique NFTs.
-- 🖼️ **NFT Gallery** – View all minted NFTs within the app.
+- 🖼️ **NFT Collections** – View all minted NFTs within the app.
 - 📦 **Thirdweb Integration** – Smooth Web3 interactions with Thirdweb SDK.
 - ⚡ **Built with Next.js & Tailwind CSS** – Fast and responsive UI.
 

@@ -2,7 +2,7 @@
  * The navbar component.
  *
  * This component renders a navigation bar with a logo, a link to the
- * gallery, a button to mint a new NFT, and an authentication component.
+ * Collections, a button to mint a new NFT, and an authentication component.
  */
 import funmintLogo from '@/assets/funmint.png';
 import Image from 'next/image';
@@ -24,7 +24,7 @@ export default async function Navbar() {
             />
           </Link>
           <Link
-            href="/gallery"
+            href="/collections"
             className="font-semibold text-zinc-500 hover:text-black text-sm underline-on-hover after:bg-zinc-500"
           >
             Collections

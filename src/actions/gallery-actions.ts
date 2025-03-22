@@ -1,6 +1,6 @@
 'use server';
 /**
- * This file contains functions to interact with the Gallery contract.
+ * This file contains functions to interact with the Collections contract.
  * The functions are exported and can be used by other parts of the application.
  * The functions are marked with the 'use server' directive to indicate that they should be executed on the server.
  */
