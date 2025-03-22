@@ -50,6 +50,6 @@ Live at: [funmint.vercel.app](https://funmint.vercel.app)
 ## 🖼️ App Preview
 
 <p align="center">
-<img src="https://github.com/lrmn7/funmint-somnia/blob/master/src/assets/sample/funmint.png?raw=true" style="padding-bottom: 15px" />
+<img src="https://github.com/lrmn7/funmint-somnia/blob/main/src/assets/sample/funmint.png?raw=true" style="padding-bottom: 15px" />
 </p>
 
