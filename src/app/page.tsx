@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { Button } from '@/components/ui/button';
 import NFT1 from '@/assets/nft-1.png';
 import NFT2 from '@/assets/nft-2.png';
@@ -27,22 +27,26 @@ export default function Home() {
 
         {/* Typewriter Effect */}
         <h2 className="text-4xl font-bold transition-opacity duration-500">
-  <Typewriter
-    words={[
-      "Where Creativity Meets Blockchain",
-      "Discover Unique Digital Artworks",
-      "Own, Trade, and Showcase Your NFTs",
-    ]}
-    loop={0}
-    cursor
-    cursorStyle="|" 
-    typeSpeed={100} 
-    deleteSpeed={50} 
-    delaySpeed={1500} 
-  />
-</h2>
+          <Typewriter
+            words={[
+              'Create & Mint Your NFTs',
+              'Turn Art & Memes into Collectibles',
+              'Showcase Your Unique Creations',
+            ]}
+            loop={0}
+            cursor
+            cursorStyle="|"
+            typeSpeed={100}
+            deleteSpeed={50}
+            delaySpeed={1500}
+          />
+        </h2>
 
-        <Button variant="outline" className="rounded-full transition-transform duration-300 hover:scale-105" asChild>
+        <Button
+          variant="outline"
+          className="rounded-full transition-transform duration-300 hover:scale-105"
+          asChild
+        >
           <Link href="/mint/nft">Pop a Mint</Link>
         </Button>
       </div>
