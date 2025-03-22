@@ -11,7 +11,7 @@ import { defineChain } from 'thirdweb/chains';
  *
  * Contract Details:
  * - Chain: Sepolia
- * - Address: 0xA895a9b5882DBa287CF359b6a722C5be46aCb675
+ * - Address: 0x2719EB739521A40dA34495252a28539A43cC8750
  *
  * Usage:
  * Import the 'contract' from this module to interact with the specified smart contract.
