@@ -47,12 +47,12 @@ export default function ConnectWalletButton({
     <Dialog open={isModalOpen} onOpenChange={setIsModalOpen} modal={true}>
       {!hideTriggerButton && (
         <DialogTrigger asChild>
-<Button
-  className="rounded-full transition-transform duration-300 hover:scale-105"
-  variant="outline"
->
-  Connect Wallet
-</Button>
+          <Button
+            className="rounded-full transition-transform duration-300 hover:scale-105"
+            variant="outline"
+          >
+            Connect Wallet
+          </Button>
         </DialogTrigger>
       )}
       <DialogContent
@@ -71,7 +71,8 @@ export default function ConnectWalletButton({
           client={client}
           appMetadata={{
             name: 'FunMint',
-            description: 'A website dedicated to creating and minting NFTs on the Somnia Network testnet.',
+            description:
+              'A website dedicated to creating and minting NFTs on the Somnia Network testnet.',
           }}
           wallets={wallets}
           theme={customTheme}

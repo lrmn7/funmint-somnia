@@ -31,15 +31,15 @@ export default async function Navbar() {
           </Link>
         </div>
         <div className="flex gap-5">
-        <Button
-  variant="outline"
-  className="rounded-full transition-transform duration-300 hover:scale-105 hidden sm:flex"
-  asChild
->
-  <Link href="https://testnet.somnia.network/" target="_blank" rel="noopener noreferrer">
-    Explorer Somnia
-  </Link>
-</Button>
+          <Button
+            variant="outline"
+            className="rounded-full transition-transform duration-300 hover:scale-105 hidden sm:flex"
+            asChild
+          >
+            <Link href="https://testnet.somnia.network/" target="_blank" rel="noopener noreferrer">
+              Explorer Somnia
+            </Link>
+          </Button>
 
           <Auth />
         </div>
