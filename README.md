@@ -15,8 +15,8 @@ Welcome to **FunMint**, a Web3 app for creating and minting unique NFTs on the *
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/lrmn7/funmint.git
-cd funmint
+git clone https://github.com/lrmn7/funmint-somnia.git
+cd funmint-somnia
 npm install
 ```
 
