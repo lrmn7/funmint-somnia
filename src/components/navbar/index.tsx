@@ -11,6 +11,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import Auth from './auth';
+import { FaXTwitter } from 'react-icons/fa6'; // icon X (Twitter)
 
 export default async function Navbar() {
   return (
@@ -49,6 +50,21 @@ export default async function Navbar() {
             </Link>
           </div>
           <div className="flex gap-5">
+                          {/* Button Sosmed X */}
+  <Button
+    variant="outline"
+    className="rounded-full px-4 py-2 transition-transform duration-300 hover:scale-105"
+    size="icon"
+    asChild
+  >
+    <Link
+      href="https://x.com/romanromannya"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaXTwitter className="w-4 h-4" />
+    </Link>
+  </Button>
             <Button
               variant="outline"
               className="rounded-full transition-transform duration-300 hover:scale-105 hidden sm:flex"

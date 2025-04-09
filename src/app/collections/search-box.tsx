@@ -5,16 +5,15 @@ import { useQueryState } from 'nuqs';
 import { useEffect, useState } from 'react';
 
 /**
- * SearchBox component allows users to input search text
- * for filtering NFTs.
+ * SearchBox component — handles NFT search input & query sync.
  */
 export default function SearchBox() {
   const [search, setSearch] = useQueryState('search', { clearOnDefault: true });
 
   return (
     <Input
-      placeholder="Search NFT..."
       type="text"
+      placeholder="Search NFT..."
       className="sm:max-w-sm max-sm:mt-3 rounded-full border-2"
       value={search || ''}
       onChange={(e) => setSearch(e.target.value)}
@@ -23,34 +22,26 @@ export default function SearchBox() {
 }
 
 /**
- * SearchNotFound component displays a message when no NFTs
- * match the search query.
+ * SearchNotFound component — displays message if search query returns no result.
  */
 export function SearchNotFound() {
   const [search] = useQueryState('search', { clearOnDefault: true });
-  const [isNotFound, setIsNotFound] = useState<boolean>(false);
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
-    if (!search) {
-      setIsNotFound(false);
-      return;
-    }
+    if (!search) return setNotFound(false);
 
-    // Check if all items in the NFT list are hidden
-    const children = document.querySelectorAll('#nft-list .hidden');
     const nftList = document.getElementById('nft-list');
-    setIsNotFound(children.length === nftList?.children.length);
+    const hiddenItems = nftList?.querySelectorAll('.hidden');
+
+    setNotFound(hiddenItems?.length === nftList?.children.length);
   }, [search]);
 
-  if (!search) return <></>;
+  if (!search || !notFound) return null;
 
-  if (search) {
-    if (!isNotFound) return <></>;
-
-    return (
-      <p className="font-semibold text-zinc-400">
-        Sorry, we couldn&apos;t find any NFT named &quot;{search}&quot;.
-      </p>
-    );
-  }
+  return (
+    <p className="font-semibold text-zinc-400">
+      Sorry, we couldn&apos;t find any NFT named &quot;{search}&quot;.
+    </p>
+  );
 }
